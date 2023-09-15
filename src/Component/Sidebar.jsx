@@ -10,31 +10,17 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import { AiFillHome } from 'react-icons/ai';
+import { FcAbout } from 'react-icons/fc';
+import { BiSolidContact } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
+
+
+
 
 const drawerWidth = 240;
 
-const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
-  ({ theme, open }) => ({
-    flexGrow: 1,
-    padding: theme.spacing(3),
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginLeft: `-${drawerWidth}px`,
-    ...(open && {
-      transition: theme.transitions.create('margin', {
-        easing: theme.transitions.easing.easeOut,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-      marginLeft: 0,
-    }),
-  }),
-);
+
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -61,19 +47,16 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-end',
 }));
-export default function Table() {
+export default function Sidebar() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState(0);
 
   
   const handleDrawerToggle = () => {
     setOpen((prevOpen) => !prevOpen); 
   };
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+ 
  
   return (
     <Box sx={{ display: 'flex' }}>
@@ -109,36 +92,16 @@ export default function Table() {
     >
       
       <Divider />
-      <List>
-        <li><InboxIcon />home</li>
-        <li><MailIcon />home</li>
-        <li><InboxIcon />home</li>
-        <li><MailIcon />home</li>
+      <List className='sidebar'>
+        <li><Link to=""><AiFillHome className='homeicon'/>HOME</Link></li>
+        <li><Link to="/About"><FcAbout className='homeicon'/>ABOUT </Link></li>
+        <li><Link to=""><BiSolidContact className='homeicon'/>CONTACT</Link></li>
       </List>
       
       <Divider />
       
     </Drawer>
-    <Main open={open}>
-      <DrawerHeader />
-      <Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        variant="scrollable"
-        scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
-      >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        <Tab label="Item Five" />
-        <Tab label="Item Six" />
-        <Tab label="Item Seven" />
-      </Tabs>
-    </Box>
-    </Main>
+   
   </Box>
 );
 }
