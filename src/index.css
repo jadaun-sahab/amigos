@@ -5,26 +5,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:linear-gradient(to right,rgb(43, 44, 98),rgb(24, 26, 81));
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+a{
+  color: white;
+}
+.home{
+  padding-top: 100px;
+ color: white;
+  height: 100vh;
+}
+.home h1{
+  text-align: center;
+  font-weight: 400;
+  font-size: 400%;
+}
+.sidebar{
+  background:linear-gradient(to right,rgb(44, 44, 96),rgb(24, 26, 81));
+  height: 100vh;
+}
 .sidebar li{
   padding: 12px;
 border-bottom: 2px solid black;
 }
 .sidebar li a{
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .homeicon{
-  color: #191d45;
+  color: #ffffff;
   margin:  0px 5px 0 5px;
   font-size: 1.5rem;
 }
 .about{
   margin: 5em 3em;
+}
+.Itemtwo,.Itemthree{
+  color: white;
 }

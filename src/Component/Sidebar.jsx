@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -13,14 +13,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { AiFillHome } from 'react-icons/ai';
 import { MdFeedback } from 'react-icons/md';
 import { BiSolidContact } from 'react-icons/bi';
+import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
-
-
 const drawerWidth = 240;
-
-
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -39,18 +35,9 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-end',
-}));
-export default function Sidebar() {
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
 
+export default function Sidebar() {
+  const [open, setOpen] = React.useState(false);
   
   const handleDrawerToggle = () => {
     setOpen((prevOpen) => !prevOpen); 
@@ -59,7 +46,7 @@ export default function Sidebar() {
  
  
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex' }} >
     <CssBaseline />
     <AppBar position="fixed" open={open}>
       <Toolbar sx={{bgcolor:"#191d45"}}>
@@ -72,12 +59,13 @@ export default function Sidebar() {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div" >
-          AMIGOS
-        </Typography>
+        <Typography variant="h6" noWrap component="div" >AMIGOS</Typography>
+        <Typography sx={{position:"absolute",right:"28px", fontSize:"25px"}}>
+          <Link to="/cart"><FaShoppingCart/></Link>
+          </Typography>
       </Toolbar>
     </AppBar>
-    <Drawer
+    <Drawer 
       sx={{
         width: drawerWidth,
         flexShrink: 0,
@@ -91,9 +79,9 @@ export default function Sidebar() {
       open={open}
     >
       
-      <Divider />
+      <Divider/>
       <List className='sidebar'>
-        <li><Link to="/"><AiFillHome className='homeicon'/>HOME</Link></li>
+        <li><Link to="/home"><AiFillHome className='homeicon'/>HOME</Link></li>
         <li><Link to="/About"><MdFeedback className='homeicon'/>ABOUT </Link></li>
         <li><Link to="/"><BiSolidContact className='homeicon'/>CONTACT</Link></li>
       </List>

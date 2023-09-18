@@ -51,8 +51,8 @@ export default function About() {
      <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Privacy Policy" {...a11yProps(0)} />
-          <Tab label="Terms & Conditions" {...a11yProps(1)} />
+          <Tab label="Privacy Policy" {...a11yProps(0)} sx={{color:"white"}}/>
+          <Tab label="Terms & Conditions" {...a11yProps(1)} sx={{color:"white"}}/>
         </Tabs>
       </Box>
       
