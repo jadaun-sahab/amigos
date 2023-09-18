@@ -16,7 +16,15 @@ code {
   padding: 12px;
 border-bottom: 2px solid black;
 }
+.sidebar li a{
+  color: black;
+  text-decoration: none;
+}
 .homeicon{
-  margin:  0px 5px;
+  color: #191d45;
+  margin:  0px 5px 0 5px;
   font-size: 1.5rem;
+}
+.about{
+  margin: 5em 3em;
 }

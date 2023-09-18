@@ -11,7 +11,7 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AiFillHome } from 'react-icons/ai';
-import { FcAbout } from 'react-icons/fc';
+import { MdFeedback } from 'react-icons/md';
 import { BiSolidContact } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
@@ -62,7 +62,7 @@ export default function Sidebar() {
     <Box sx={{ display: 'flex' }}>
     <CssBaseline />
     <AppBar position="fixed" open={open}>
-      <Toolbar>
+      <Toolbar sx={{bgcolor:"#191d45"}}>
         <IconButton
           color="inherit"
           aria-label="open drawer"
@@ -72,7 +72,7 @@ export default function Sidebar() {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div">
+        <Typography variant="h6" noWrap component="div" >
           AMIGOS
         </Typography>
       </Toolbar>
@@ -93,9 +93,9 @@ export default function Sidebar() {
       
       <Divider />
       <List className='sidebar'>
-        <li><Link to=""><AiFillHome className='homeicon'/>HOME</Link></li>
-        <li><Link to="/About"><FcAbout className='homeicon'/>ABOUT </Link></li>
-        <li><Link to=""><BiSolidContact className='homeicon'/>CONTACT</Link></li>
+        <li><Link to="/"><AiFillHome className='homeicon'/>HOME</Link></li>
+        <li><Link to="/About"><MdFeedback className='homeicon'/>ABOUT </Link></li>
+        <li><Link to="/"><BiSolidContact className='homeicon'/>CONTACT</Link></li>
       </List>
       
       <Divider />

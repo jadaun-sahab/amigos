@@ -1,46 +1,68 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Itemthree from "./Itemthree";
+import Itemtwo from "./Itemtwo";
 
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
 
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 export default function About() {
-          const [value, setValue] = useState('1');
-        
-          const handleChange = (newValue) => {
-            setValue(newValue);
-          };
-        
-          return (
-            <div className="tabs-container">
-              <div className="tab-list">
-                <div
-                  className={`tab ${value === '1' ? 'active' : ''}`}
-                  onClick={() => handleChange('1')}
-                >
-                  Item One
-                </div>
-                <div
-                  className={`tab ${value === '2' ? 'active' : ''}`}
-                  onClick={() => handleChange('2')}
-                >
-                  Item Two
-                </div>
-                <div
-                  className={`tab ${value === '3' ? 'active' : ''}`}
-                  onClick={() => handleChange('3')}
-                >
-                  Item Three
-                </div>
-              </div>
-              <div className="tab-content">
-                <div className={`tab-panel ${value === '1' ? 'active' : ''}`}>
-                  Item One Content
-                </div>
-                <div className={`tab-panel ${value === '2' ? 'active' : ''}`}>
-                  Item Two Content
-                </div>
-                <div className={`tab-panel ${value === '3' ? 'active' : ''}`}>
-                  Item Three Content
-                </div>
-              </div>
-            </div>
-          );
-        }
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div className="about">
+     <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="Privacy Policy" {...a11yProps(0)} />
+          <Tab label="Terms & Conditions" {...a11yProps(1)} />
+        </Tabs>
+      </Box>
+      
+      <CustomTabPanel value={value} index={0}>
+        <Itemtwo/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+       <Itemthree/>
+      </CustomTabPanel>
+    </Box>
+    </div>
+  );
+}
