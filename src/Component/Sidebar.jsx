@@ -13,7 +13,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { AiFillHome } from 'react-icons/ai';
 import { MdFeedback } from 'react-icons/md';
 import { BiSolidContact } from 'react-icons/bi';
+import { GiHeartEarrings } from 'react-icons/gi';
 import { FaShoppingCart } from 'react-icons/fa';
+import { RiWomenFill } from 'react-icons/ri';
+import { RiMenLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -83,7 +86,11 @@ export default function Sidebar() {
       <List className='sidebar'>
         <li><Link to="/home"><AiFillHome className='homeicon'/>HOME</Link></li>
         <li><Link to="/About"><MdFeedback className='homeicon'/>ABOUT </Link></li>
-        <li><Link to="/"><BiSolidContact className='homeicon'/>CONTACT</Link></li>
+        <li><Link to="/beauty"><GiHeartEarrings className='homeicon'/>BEAUTY </Link></li>
+        <li><Link to="/women"><RiWomenFill className='homeicon'/>WOMEN </Link></li>
+        <li><Link to="/men"><RiMenLine className='homeicon'/>MEN </Link></li>
+        <li><Link to="/contact"><BiSolidContact className='homeicon'/>CONTACT</Link></li>
+        <li><Link to="/addproduct"><BiSolidContact className='homeicon'/>add</Link></li>
       </List>
       
       <Divider />

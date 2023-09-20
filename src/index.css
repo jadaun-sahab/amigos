@@ -5,47 +5,187 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:linear-gradient(to right,rgb(43, 44, 98),rgb(24, 26, 81));
-  
+  background: linear-gradient(to right, rgb(43, 44, 98), rgb(24, 26, 81));
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-a{
+
+a {
   color: white;
 }
-.home{
-  padding-top: 100px;
- color: white;
-  height: 100vh;
-}
-.home h1{
+
+.home {
   text-align: center;
-  font-weight: 400;
-  font-size: 400%;
-}
-.sidebar{
-  background:linear-gradient(to right,rgb(44, 44, 96),rgb(24, 26, 81));
+  padding-top: 100px;
+  color: white;
   height: 100vh;
 }
-.sidebar li{
-  padding: 12px;
-border-bottom: 2px solid black;
+
+.home img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
 }
-.sidebar li a{
+
+.home {
+  text-align: center;
+
+}
+
+.sidebar {
+  background: linear-gradient(to right, rgb(44, 44, 96), rgb(24, 26, 81));
+  height: 100vh;
+}
+
+.sidebar li {
+  color: white;
+  padding: 12px;
+  border-bottom: 2px solid black;
+}
+
+.sidebar li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.homeicon{
+
+.homeicon {
   color: #ffffff;
-  margin:  0px 5px 0 5px;
+  margin: 0px 5px 0 5px;
   font-size: 1.5rem;
 }
-.about{
+
+.about {
   margin: 5em 3em;
 }
-.Itemtwo,.Itemthree{
+
+.Itemtwo,
+.Itemthree {
   color: white;
+}
+
+.itemthreechild p {
+  color: rgb(216, 215, 215);
+}
+
+.homechild1 {
+  width: 90%;
+  display: block;
+  margin: 6em auto;
+}
+
+.homechild2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: 3em auto;
+}
+
+.homechildbox {
+  text-align: center;
+  margin: 15px;
+  border-radius: 12px;
+  background-color: #00000073;
+  transition: all 0.5s;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.homechildbox h3 {
+  font-weight: 400;
+  /* font-size: 1.3rem; */
+}
+
+.homechildbox:hover>img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  filter: brightness(1.1);
+}
+
+.homechildbox img {
+  width: 80%;
+  height: 60%;
+}
+
+.beauty {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  color: white;
+  margin: 6em auto;
+  width: 90%;
+}
+
+.beauty img {
+  width: 80%;
+}
+
+.beautychild {
+  text-align: center;
+  margin: 20px;
+  display: block;
+}
+
+.beautychild li {
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+  background-color: #0c0c0c;
+  color: white;
+}
+
+.addproduct table {
+  padding: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.addproduct {
+  width: 90%;
+  margin: 5em auto;
+  display: block;
+}
+
+.addproduct th {
+  background-Color: rgb(25, 25, 75);
+  color: white;
+  font-Size: 14px;
+  text-Align: center;
+  padding: 20px;
+}
+
+.addproduct td {
+  border: 1px solid #dddddd;
+  text-Align: center;
+  padding: 15px;
+}
+
+.addproduct td {
+  background-color: #fff;
+}
+
+.addproduct td:nth-child(4) {
+  cursor: pointer;
+}
+
+.status-options {
+  position: absolute;
+  display: block;
+  background-color: rgb(41, 41, 41);
+  right: 6.8rem;
+  padding: 6px;
+}
+
+.status-options button {
+  display: block;
+  margin: 2px 5px;
+  width: 90px;
+  cursor: pointer;
+}
+.status-button{
+  cursor: pointer;
 }
