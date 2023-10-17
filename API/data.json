@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "user": "Vikas",
+      "orderdate": " 2-Sep-23",
+      "price": "900",
+      "address": "Shivpuri",
+      "status": "Completed",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "2",
+      "user": "Vivek",
+      "orderdate": " 2-Sep-23",
+      "price": "410",
+      "address": "Nagpur",
+      "status": "Completed",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "3",
+      "user": "Vishal",
+      "orderdate": " 2-Sep-23",
+      "price": "600",
+      "address": "Nagpur",
+      "status": "Not started",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "4",
+      "user": "Riya",
+      "orderdate": "  2-Sep-23",
+      "price": "1500",
+      "address": "Gwalior",
+      "status": "Not started",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "5",
+      "user": "Sriram",
+      "orderdate": " 9-Sep-23",
+      "price": "700",
+      "address": "Tenali",
+      "status": "PENDING",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "6",
+      "user": "Vidhi",
+      "orderdate": " 2-Sep-23",
+      "price": "4020",
+      "address": "Jaipur",
+      "status": "Completed",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "7",
+      "user": "Himu",
+      "orderdate": "12-Sep-23",
+      "price": "490",
+      "address": "Sitamari",
+      "status": "Not started",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "8",
+      "user": "Harsh",
+      "orderdate": "5-Oct-23",
+      "price": "400",
+      "address": "Shivpuri",
+      "status": "PENDING",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "9",
+      "user": "Bholu",
+      "orderdate": " 2-Sep-23",
+      "price": "500",
+      "address": "Shivpuri",
+      "status": "In Progress",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": "10",
+      "user": "Ashish",
+      "orderdate": " 2-Sep-23",
+      "price": "980",
+      "address": "Mumbai",
+      "status": "In Progress",
+      "contact": "9977665554",
+      "email": "xyz@gmail.com"
+    }
+  ]
+}

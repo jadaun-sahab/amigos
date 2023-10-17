@@ -18,6 +18,279 @@ a {
   color: white;
 }
 
+.emptycart {
+  position: absolute;
+  width: 60%;
+  left: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptycart img {
+  position: absolute;
+  top: 150px;
+  display: block;
+  left: 5%;
+  width: 45%;
+}
+
+.cartheading {
+  display: block;
+  position: absolute;
+  background-color: #ffffff0d;
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(236, 235, 235);
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.total-price {
+  border: 2px solid white;
+  color: rgb(2, 2, 2);
+  background-color: #ffffffa7;
+  text-align: center;
+  width: 25%;
+  font-size: 1.1rem;
+  margin: 7em auto 0 auto;
+  padding: 8px 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+
+/* -------------------------------------------Debit----------------------------------------------- */
+
+
+.debitcard {
+  margin-top: 15%;
+  margin-left: 33%;
+  width: 450px;
+  height: 280px;
+  padding: 12px 20px;
+  background: linear-gradient(140deg, rgb(38, 38, 230), rgb(73, 105, 235), rgb(38, 38, 230));
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(50, 50, 50), -1px rgb(35, 35, 35) 1px black;
+}
+
+.creditcard {
+  margin-top: 15%;
+  margin-left: 33%;
+  width: 450px;
+  height: 280px;
+  padding: 12px 20px;
+  background: linear-gradient(140deg, rgb(182, 139, 30), rgb(235, 151, 73), rgb(183, 88, 29));
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(50, 50, 50), -1px rgb(35, 35, 35) 1px black;
+}
+
+.debitcard input {
+  background-color: rgba(254, 254, 254, 0.648);
+  border-radius: 5px;
+  border: 1px solid white;
+  color: #000000;
+
+  padding: 5px;
+}
+
+.debitcard input::placeholder {
+  color: #777575;
+}
+
+
+/* -------------------------------------------Debit----------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+.buy-now {
+  position: absolute;
+  top: 5rem;
+  right: 20px;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-now a {
+  text-decoration: none;
+}
+
+.buy-now:hover {
+  background-color: #ffffff1b;
+}
+
+.buy-now-disabled {
+  color: grey;
+  border-color: grey;
+  cursor: wait;
+}
+
+.buy-now-disabled:hover {
+  background-color: #04040400;
+}
+
+.Payoption {
+  margin-top: 150px;
+}
+
+.Payoption div {
+  background-color: rgb(119, 118, 175);
+  width: 25%;
+  padding: 40px 0 40px 0;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Payoption div h2 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px black;
+}
+
+.Payoption div p {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-top: 10px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 4px 18px;
+  background-color: #ffffffb3;
+  cursor: pointer;
+}
+
+.Payoption div p:hover {
+  background-color: #ffffff62;
+}
+
+.Payoption div p a {
+  text-decoration: none;
+  color: rgb(254, 25, 25);
+}
+
+.Payoption div button {
+  background-color: #2e336e;
+  width: 250px;
+  padding: 14px 24px;
+  margin: 8px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.Payoption div button:hover {
+  background-color: #232750;
+}
+
+.Payoption div button a {
+  text-decoration: none;
+}
+
+.cart {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cart li img {
+  width: 60%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.cartchild2 {
+  display: block;
+  border: 2px solid white;
+  color: white;
+  margin: 2em auto;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #ffffff17;
+  width: 95%;
+  text-align: center;
+}
+
+.cartchild2 li {
+  list-style: none;
+}
+
+.cartchild2 button {
+  color: #f72828;
+  padding: 5px 20px;
+  border: 2px solid red;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ffffff00;
+}
+
+.cartchild2 button:hover {
+  background-color: #100f0fb8;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+
+
+.payform {
+  width: 50%;
+  border: 2px solid white;
+  margin: 8rem auto 0 auto;
+  padding: 20px 0 30px 0;
+  border-radius: 20px;
+  background: linear-gradient(140deg, rgb(30, 30, 86), rgb(9, 9, 19));
+}
+
+.payform h1 {
+  font-weight: 400;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.payform input {
+  display: block;
+  width: 65%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #d2d2d2;
+}
+
+.payform button {
+  display: block;
+  width: 27%;
+  margin: 28px auto 15px auto;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: #ffffff00;
+  color: #fefefe;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.payform button:hover {
+  cursor: pointer;
+  background-color: #739ab546;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
 .home {
   text-align: center;
   padding-top: 100px;
@@ -44,10 +317,11 @@ a {
 .sidebar li {
   color: white;
   padding: 12px;
-  border-bottom: 2px solid black;
+  padding: 30px 15px;
 }
 
 .sidebar li a {
+  font-size: 21px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -59,7 +333,9 @@ a {
 }
 
 .about {
-  margin: 5em 3em;
+  display: block;
+  width: 90%;
+  margin: 5em auto;
 }
 
 .Itemtwo,
@@ -75,6 +351,23 @@ a {
   width: 90%;
   display: block;
   margin: 6em auto;
+}
+
+.homechild1 h2 {
+  font-size: 30px;
+}
+
+.homechild1 p {
+  color: grey;
+  width: 100%;
+  margin: auto;
+  /* text-align: center; */
+}
+
+.homeh1 {
+  font-weight: 400;
+  font-size: 4rem;
+  margin: 25px;
 }
 
 .homechild2 {
@@ -96,7 +389,6 @@ a {
 
 .homechildbox h3 {
   font-weight: 400;
-  /* font-size: 1.3rem; */
 }
 
 .homechildbox:hover>img {
@@ -120,16 +412,46 @@ a {
 
 .beauty img {
   width: 80%;
+  height: 250px;
+  object-fit: contain;
 }
 
 .beautychild {
   text-align: center;
   margin: 20px;
   display: block;
+  box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+  padding: 20px;
 }
 
 .beautychild li {
   list-style: none;
+}
+
+.beautychild li button {
+  border: none;
+  width: 130px;
+  margin: 10px;
+  background-color: rgba(99, 178, 247, 0.481);
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 2px 2px 1px white;
+}
+
+.beautychild li button {
+  text-decoration: none;
+  color: white;
+}
+
+.beautychild li button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgba(99, 178, 247, 0.311);
+}
+
+.beautychild li button:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px 1px rgb(33, 37, 89);
 }
 
 .footer {
@@ -138,16 +460,289 @@ a {
   color: white;
 }
 
-.addproduct table {
-  padding: 20px;
-  width: 100%;
-  border-collapse: collapse;
+/* -------------------------------------------rating------------------------------------------- */
+.green {
+  color: rgb(81, 255, 81);
 }
 
-.addproduct {
-  width: 90%;
-  margin: 5em auto;
+.lightgreen {
+  color: rgb(31, 172, 9);
+}
+
+.yellow {
+  color: rgb(255, 168, 29);
+}
+
+.red {
+  color: red;
+}
+
+/* ------------------------------------------contact---------------------------------------- */
+
+.contact {
+  padding-top: 5em;
+  margin: 1rem auto 4em auto;
   display: block;
+  width: 75%;
+}
+
+.side {
+  margin-top: 90px;
+}
+
+.section3 {
+  padding: 4em 2em 2em 8em;
+  border-radius: 20px;
+  background-color: #141738;
+}
+
+.section3 .form {
+  display: grid;
+  grid-template-columns: 320px 600px;
+}
+
+.section3 h1 {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 2.6rem;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section3 p {
+  margin-bottom: 30px;
+  width: 66%;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(192, 192, 192);
+}
+
+#name,
+#email,
+#number {
+  font-size: 1.1rem;
+  padding: 17px 38px;
+  color: rgb(255, 255, 255);
+  background-color: #7f7e7e75;
+  border-radius: 25px;
+  border: none;
+  margin: 12px 0;
+}
+
+#textarea {
+  width: 90%;
+  height: 95%;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: #76757575;
+}
+
+.formbtn {
+  width: 80%;
+  margin-left: 37em;
+  margin-bottom: 2em;
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px 10px;
+  background-color: #818181;
+  border-radius: 30px;
+  text-align: center;
+  border: none;
+  align-items: center;
+}
+
+.formbtn:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #989696;
+}
+
+
+/* ------------------------------------------contact---------------------------------------- */
+
+
+.adminsidebar {
+  display: block;
+  background-color: #23254f;
+  color: white;
+  width: 240px;
+  position: fixed;
+  top: 68px;
+  height: 522px;
+  border: 1px solid white;
+  border-left: none;
+  border-top: none;
+  z-index: 1;
+}
+
+.adminsidebar1 {
+  position: fixed;
+  top: 68px;
+  width: 240px;
+  height: 60px;
+  border: 1px solid rgb(253, 253, 253);
+  border-left: none;
+  z-index: 1;
+  background-color: #23254f;
+}
+
+.adminsidebar1 .fa-solid {
+  padding-left: 18px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.adminsidebar a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.adminsidebar li {
+  padding: 20px 15px;
+}
+
+.adminsidebar2 {
+  display: block;
+  background-color: #23254f;
+  color: white;
+  width: 240px;
+  position: fixed;
+  height: 60px;
+  top: 64px;
+  border: 1px solid rgb(255, 255, 255);
+  border-left: none;
+}
+
+.adminsidebar2 a {
+  text-decoration: none;
+}
+
+
+.adminsidebar2 li {
+  padding: 12px 15px;
+}
+
+.adminicon {
+  margin-right: 18px;
+}
+
+
+/* -------------------------------------------------DASHBOARD------------------------------------------------- */
+
+
+.admin {
+  display: flex;
+}
+
+.adminchild1 {
+  position: fixed;
+  width: 20%;
+}
+
+.adminchild2 {
+  width: 100%;
+}
+
+.admin .adminchild2 {
+  padding: 120px 20px 0px 20px;
+}
+
+
+.boxs {
+  display: flex;
+  margin-left: 240px;
+  width: 83%;
+  margin-top: -55px;
+  margin-bottom: 30px;
+}
+
+.boxcss {
+  background-color: #fff;
+}
+
+.boxcss {
+  display: flex;
+  margin: 20px 20px 10px 20px;
+  width: 420px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.boxcss>div {
+  display: block;
+}
+
+.boxchild1 {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.boxchild2 {
+  width: 50%;
+}
+
+.cart-shopping {
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: red;
+  z-index: -9;
+}
+
+.box1 {
+  background-color: rgb(255, 234, 234);
+}
+
+.box2 {
+  background-color: rgb(220, 220, 253);
+}
+
+.users {
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: blue;
+}
+
+.box3 {
+  background-color: rgb(227, 249, 227);
+}
+
+.truck {
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: green;
+}
+
+.boxcss>div h3 {
+  margin: 0;
+}
+
+
+/* -------------------------------------------------DASHBOARD------------------------------------------------- */
+
+
+/* -------------------------------------------------TABLE------------------------------------------------- */
+
+.addproduct {
+  position: relative;
+  top: 0px;
+  margin-top: 7px;
+  width: 80%;
+  margin-left: 260px;
+  display: block;
+}
+
+.addproduct table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .addproduct th {
@@ -155,37 +750,735 @@ a {
   color: white;
   font-Size: 14px;
   text-Align: center;
-  padding: 20px;
+  padding: 18px 45px;
 }
 
 .addproduct td {
   border: 1px solid #dddddd;
   text-Align: center;
-  padding: 15px;
+  background-color: #3c3f66;
+  padding: 18px 45px;
+  color: #ffffff;
 }
 
-.addproduct td {
-  background-color: #fff;
+.addproduct td:nth-child(1) {
+  padding: 14px 0px;
+  width: 50px;
 }
 
 .addproduct td:nth-child(4) {
   cursor: pointer;
 }
 
+.addproduct table td button {
+  background-color: #14173800;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 9px 15px;
+  color: white;
+}
+
+.addproduct table td i{
+  cursor: pointer;
+}
 .status-options {
   position: absolute;
   display: block;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(20, 16, 89);
   right: 6.8rem;
-  padding: 6px;
+  color: rgb(239, 158, 45);
 }
 
 .status-options button {
   display: block;
-  margin: 2px 5px;
-  width: 90px;
+  width: 120px;
   cursor: pointer;
 }
-.status-button{
+
+.status-button {
   cursor: pointer;
 }
+
+
+
+/* -------------------------------------------------TABLE------------------------------------------------- */
+
+
+
+/* -------------------------------------------------PRODUCT------------------------------------------------- */
+
+
+.manage table tbody td img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.manage table tbody td img:hover {
+  scale: 5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addproduct table tbody td {
+  font-size: 1rem;
+}
+
+.addproduct table thead th {
+  font-size: 1rem;
+}
+
+.fa-trash {
+  font-size: 1.1rem;
+  color: rgb(255, 2, 2);
+  cursor: pointer;
+}
+
+
+/* -------------------------------------------------PRODUCT------------------------------------------------- */
+
+.productaddpage {
+  background-color: rgb(14, 14, 65);
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 55%;
+  position: relative;
+  top: -10px;
+  margin-left: 28%;
+  padding: 20px;
+}
+
+.productaddpage h1 {
+  color: white;
+  text-align: center;
+}
+
+.productaddpage input {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.productaddpage button {
+  display: block;
+  width: 27%;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: #38de4ba2;
+  color: #ffffff;
+  border: 2px solid white;
+}
+
+.productaddpage button:hover {
+  cursor: pointer;
+  background-color: #38de4bba;
+}
+
+
+/* -------------------------------------------------LOGIN------------------------------------------------- */
+
+
+.login3 {
+  color: white;
+  position: relative;
+  top: 100px;
+  padding: 60px 20px;
+  width: 40%;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgb(37, 37, 85), rgb(24, 26, 81));
+  box-shadow: 2px 2px 8px rgb(243, 239, 239);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login3 h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+#email3,
+#password3 {
+  padding: 7px 10px;
+  margin: 5px 10px;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.login3 a {
+  color: grey;
+  font-size: 12px;
+  cursor: pointer;
+  /* text-decoration: none; */
+}
+
+#loginbtn {
+  border: none;
+  width: 40%;
+  margin: 10px;
+  background-color: rgba(99, 178, 247, 0.481);
+  font-size: 1.2rem;
+  padding: 8px 50px;
+  box-shadow: 2px 2px 1px white;
+}
+
+#loginbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+#loginbtn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#loginbtn:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px 1px rgb(33, 37, 89);
+}
+
+/* -------------------------------------------------LOGIN------------------------------------------------- */
+
+
+.menu ul {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  background-color: #fff;
+  padding: 0;
+}
+
+.menu ul a li {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  width: 200px;
+  padding: 18px;
+  color: black;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul a li:hover {
+  background-color: #c8c8c8;
+  color: rgb(0, 0, 0);
+}
+
+/* <!------------------- media queries starts here -------------------> */
+
+@media (max-width: 1360px) {
+
+  #textarea {
+    width: 70%;
+    height: 95%;
+  }
+
+  .formbtn {
+    margin-left: 30em;
+  }
+
+  .section3 {
+    padding: 4em 2em 2em 6em;
+    border-radius: 20px;
+    background-color: #141738;
+  }
+
+  .homechild2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 3em auto;
+  }
+
+  .login3 {
+    width: 60%;
+  }
+
+
+}
+
+/* <!------------------- screen-1 ends here -------------------> */
+
+@media (max-width: 1200px) {
+  .payform {
+    width: 70%;
+    margin: 8rem auto 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  .productaddpage {
+    width: 70%;
+    padding: 20px;
+    margin-left: 250px;
+  }
+
+  .section3 {
+    padding: 4em 2em 2em 4em;
+  }
+
+  .addproduct {
+    margin-left: 50px;
+  }
+
+  .beauty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart {
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart li img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .cartchild2 {
+    width: 90%;
+  }
+
+}
+
+/* <!------------------- screen-2 ends here -------------------> */
+
+@media (max-width: 1150px) {
+  .addproduct table tbody td {
+    font-size: 10px;
+    padding: 18px 25px;
+  }
+
+  .addproduct table thead th {
+    font-Size: 12px;
+    padding: 18px 25px;
+  }
+
+
+  #name,
+  #email,
+  #number {
+    padding: 17px 28px 17px 28px;
+    width: 90%;
+  }
+
+  #textarea {
+    margin-top: 15px;
+    width: 90%;
+    height: 95%;
+    padding: 80px 0;
+  }
+
+  .formbtn {
+    margin: 2rem auto;
+    width: 50%;
+    padding-left: -2em;
+  }
+
+  .section3 {
+    padding: 4em 2em 2em 4em;
+  }
+
+  .section3 .form {
+    display: block;
+  }
+
+  .homeh1 {
+    font-size: 3rem;
+  }
+}
+
+/* <!------------------- screen-3 ends here -------------------> */
+
+@media (max-width: 900px) {
+  .payform {
+    width: 80%;
+    margin: 8rem auto 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  .productaddpage {
+    /* width: 80%; */
+    padding: 20px;
+  }
+  
+  .productaddpage input {
+    width: 70%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+  
+  .productaddpage button {
+    width: 35%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .cart {
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart li img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .cartchild2 {
+    width: 90%;
+  }
+
+  .beauty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addproduct th {
+    font-Size: 8px;
+    padding: 12px 12px;
+  }
+
+  .addproduct td {
+    font-size: 8px;
+    padding: 12px 12px;
+  }
+
+  .formbtn {
+    width: 50%;
+  }
+
+  .homechild2 {
+    display: block;
+    width: 90%;
+    margin: 3em auto;
+  }
+
+  .homeh1 {
+    font-size: 2rem;
+  }
+
+  .homechild1 h2 {
+    font-size: 25px;
+  }
+
+  .homechild1 p {
+    font-size: 12px;
+  }
+
+  .home img {
+    width: 30%;
+  }
+
+  .Itemtwo h1,
+  .Itemthree h1 {
+    font-size: 1.8rem;
+  }
+
+  .Itemtwo p,
+  .itemthreechild p {
+    font-size: 0.8rem;
+  }
+
+  .about {
+    width: 98%;
+  }
+
+  .login3 {
+    width: 80%;
+  }
+
+}
+
+/* <!------------------- screen-4 ends here -------------------> */
+
+@media (max-width: 700px) {
+
+  .beauty img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .beautychild {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .contact {
+    padding-top: 5em;
+    margin: 1rem auto 4em auto;
+    display: block;
+    width: 90%;
+  }
+
+  .section3 h1 {
+    font-size: 2.2rem;
+  }
+
+  .Itemtwo h1,
+  .Itemthree h1 {
+    font-size: 1.3rem;
+  }
+
+  .Itemtwo p,
+  .itemthreechild p {
+    font-size: 0.8rem;
+  }
+
+  .itemthreechild h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width:650px) {
+  .productaddpage {
+    width: 85%;
+    margin-left: 12%;
+    padding: 20px 15px;
+  }
+  .productaddpage h1{
+    font-size: 1.5rem;
+  }
+  
+  .productaddpage input {
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 15px;
+  }
+  
+  .productaddpage button {
+    width: 35%;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .beauty {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .login3 {
+    width: 90%;
+  }
+
+  .login3 h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  #email3,
+  #password3 {
+    padding: 7px 10px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  #loginbtn {
+    border: none;
+    width: 40%;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 8px 50px;
+  }
+
+  .payform {
+    width: 90%;
+    margin: 6rem auto 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  .payform h1{
+    font-size: 1.3rem;
+  }
+  .payform input {
+    width: 75%;
+    padding: 8px 15px;
+  }
+  
+  .payform button {
+    width: 40%;
+    margin: 28px auto 15px auto;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .cart {
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cart li img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .cartchild2 {
+    width: 80%;
+  }
+
+  .contact {
+    padding-top: 5em;
+    margin: 1rem auto 4em auto;
+    display: block;
+    width: 90%;
+  }
+
+  .section3 {
+    border-radius: 20px;
+    background-color: #141738;
+  }
+
+  .section3 h1 {
+    font-size: 2rem;
+  }
+
+  #name,
+  #email,
+  #number {
+    padding: 12px 20px;
+    width: 90%;
+  }
+
+  #textarea {
+    margin-top: 15px;
+    width: 90%;
+    height: 95%;
+    padding: 60px 0;
+  }
+
+  .formbtn {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 13px 5px;
+    width: 58%
+  }
+
+  .homeh1 {
+    font-size: 1.5rem;
+  }
+
+  .home img {
+    width: 40%;
+  }
+
+  .Itemthree h1 {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:500px) {
+  .login3 h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  #email3,
+  #password3 {
+    padding: 7px 10px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  #loginbtn {
+    border: none;
+    width: 140px;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 8px 2px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .productaddpage {
+    width: 90%;
+    margin-left: 12%;
+    padding: 20px 15px;
+  }
+  .productaddpage h1{
+    font-size: 1.5rem;
+  }
+  
+  .productaddpage input {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 15px;
+  }
+  .productaddpage button {
+    width: 35%;
+    margin: 15px auto;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .beauty img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .beautychild {
+    margin: 10px;
+    padding: 10px 0;
+  }
+
+  .section3 {
+    padding: 4em 1em 1em 2em;
+  }
+
+  .formbtn {
+    width: 80%;
+    margin-left: 1rem;
+  }
+
+  .section3 h1 {
+    font-size: 1.5rem;
+  }
+
+  .homechild1 h2 {
+    font-size: 20px;
+  }
+
+  .homechild1 p {
+    font-size: 12px;
+  }
+
+  .login3 h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  #email3,
+  #password3 {
+    padding: 7px 10px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+
+
+}
+
+/* //   ---------------------*---------------------*---------------------*--------------------- */

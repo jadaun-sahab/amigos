@@ -1,0 +1,50 @@
+{
+  "cart": [
+    {
+      "product": {
+        "title": "L'Occitane Precious Emulsion",
+        "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/5/6/560d90327SE075I22.jpg",
+        "price": "974 ",
+        "qty": "100 ml",
+        "rating": "★★★★★",
+        "id": "44",
+        "brand": "Chanel",
+        "categories": "Skincare"
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "title": "Forest Dark Spot Duo Serum",
+        "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/5/d/5df0988767332153636_1.jpg",
+        "price": "238 ",
+        "qty": "10 ml",
+        "rating": "★★★★☆",
+        "id": "43",
+        "brand": "Forest",
+        "categories": "Serum"
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "title": "Solid Women Red Top",
+        "avatar": "https://rukminim1.flixcart.com/image/832/832/l2z26q80/top/q/o/f/l-slk-24-subh-laxmi-original-image7f72hkd5gqu.jpeg?q=70",
+        "price": "838 ",
+        "rating": "★★★★☆",
+        "id": "23"
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "title": "Solid Women Black Top",
+        "avatar": "https://rukminim1.flixcart.com/image/832/832/xif0q/top/f/s/e/m-top212-rajovati-original-imagjumcd26fgyem.jpeg?q=70",
+        "price": "554 ",
+        "rating": "★★★☆☆",
+        "id": "22"
+      },
+      "id": 4
+    }
+  ]
+}

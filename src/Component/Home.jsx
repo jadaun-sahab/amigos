@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="home">
       <Box>
-        <h1 style={{fontWeight:"400",fontSize:"4rem",margin:"25px"}}>Welcome To Amigos Store</h1>
+        <h1 className="homeh1" >Welcome To Amigos Store</h1>
         <img style={{marginBottom:"6em"}} src={img} alt="homeimg" />
         <hr />
       </Box>
