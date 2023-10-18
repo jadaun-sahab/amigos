@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import { BiRupee } from "react-icons/bi";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Sidebar from "./Sidebar";
 
 export default function Beauty() {
   const [data, setData] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     const apiUrl = 'https://jadaun-sahab.github.io/beauty_api/beauty.json';
@@ -22,7 +24,7 @@ export default function Beauty() {
   const addToCart = (product) => {
     axios
       .post("http://localhost:8009/cart", { product })
-      .then((response) => {
+      .then(() => {
         toast("Product Added To The Cart Successfully");
       })
       .catch((error) => {
@@ -30,10 +32,24 @@ export default function Beauty() {
       });
   };
 
+  const filteredData = data.filter((item) => {
+    return item.title.toLowerCase().includes(searchText.toLowerCase());
+  });
+
+
   return (
     <>
+     <Sidebar title={<div className="searchbar">
+          <input
+            type="text"
+            className="search"
+            placeholder="Search here"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+        </div>}/>
     <div className="beauty">
-      {data.map((item) => (
+    {filteredData.map((item) => (
         <div key={item.id}>
           <div className="beautychild">
             <li style={{ width: "100%", margin: "8px auto 17px auto" }}>
@@ -67,8 +83,7 @@ export default function Beauty() {
         </div>
       ))}
     </div>
-    <ToastContainer   />
-   
+    <ToastContainer/>
     </>
   );
 }

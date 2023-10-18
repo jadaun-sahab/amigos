@@ -402,11 +402,29 @@ a {
   height: 60%;
 }
 
+
+.searchbar{
+  /* margin-top: 40px; */
+  margin-left: -80px;
+  text-align: center;
+}
+.searchbar input{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffffff37;
+  color: #fcfcfc;
+  border: none;
+}
+.searchbar input::placeholder{
+  color: #f8f8f8;
+  text-align: center;
+}
 .beauty {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
   color: white;
-  margin: 6em auto;
+  margin: 5em auto;
   width: 90%;
 }
 
@@ -978,6 +996,20 @@ a {
 
 @media (max-width: 1360px) {
 
+  .boxs {
+    margin-left: 240px;
+    width: 80%;
+    margin-top: -55px;
+    margin-bottom: 30px;
+  }
+  
+  .boxcss {
+    display: flex;
+    margin: 20px 20px 10px 20px;
+    width: 400px;
+    height: 120px;
+  }
+  
   #textarea {
     width: 70%;
     height: 95%;
@@ -1010,6 +1042,22 @@ a {
 /* <!------------------- screen-1 ends here -------------------> */
 
 @media (max-width: 1200px) {
+  .addproduct {
+    width: 88%;
+  }
+  .boxs {
+    margin-left: 100px;
+    width: 90%;
+    margin-top: -55px;
+    margin-bottom: 30px;
+  }
+  
+  .boxcss {
+    display: flex;
+    margin: 20px 20px 10px 20px;
+    width: 450px;
+    height: 120px;
+  }
   .payform {
     width: 70%;
     margin: 8rem auto 0 auto;
@@ -1026,7 +1074,7 @@ a {
   }
 
   .addproduct {
-    margin-left: 50px;
+    margin-left: 120px;
   }
 
   .beauty {
@@ -1054,6 +1102,7 @@ a {
 /* <!------------------- screen-2 ends here -------------------> */
 
 @media (max-width: 1150px) {
+  
   .addproduct table tbody td {
     font-size: 10px;
     padding: 18px 25px;
@@ -1101,6 +1150,16 @@ a {
 /* <!------------------- screen-3 ends here -------------------> */
 
 @media (max-width: 900px) {
+  .addproduct {
+    width: 82%;
+  }
+  .boxcss {
+    display: flex;
+    margin: 20px 20px 10px 20px;
+    width: 450px;
+    height: 100px;
+  }
+
   .payform {
     width: 80%;
     margin: 8rem auto 0 auto;
@@ -1203,7 +1262,7 @@ a {
 /* <!------------------- screen-4 ends here -------------------> */
 
 @media (max-width: 700px) {
-
+  
   .beauty img {
     width: 60%;
     height: 200px;
@@ -1317,6 +1376,23 @@ a {
 }
 
 @media (max-width: 550px) {
+  .beauty {
+    margin: 8em auto 3em auto;
+    width: 90%;
+  }
+
+  .searchbar{
+    position: absolute;
+    margin-left: 70px;  
+    top: 75px;
+    left: 0;
+    width: 70%;
+  }
+  .searchbar input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
   .cart {
     margin-top: 9rem;
     display: grid;
@@ -1411,6 +1487,19 @@ a {
 
 
 @media (max-width: 400px) {
+  .searchbar{
+    position: absolute;
+    margin-left: 30px;  
+    top: 75px;
+    left: 0;
+    width: 80%;
+  }
+  .searchbar input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
   .productaddpage {
     width: 90%;
     margin-left: 12%;
